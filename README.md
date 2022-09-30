@@ -490,7 +490,7 @@ a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
   El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
   ascendente o descendente.
 
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
+* `**computeStats(data)**`: la función `compute` o calcular, nos permitirá hacer
   cálculos estadísticos básicos para ser mostrados de acuerdo a la data
   proporcionada.
 

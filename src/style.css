@@ -1,0 +1,186 @@
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #1e8899;
+    font-family: cursive;
+    margin-block-end: 1px;
+    margin-block-start: 1px;
+    font-size: 40px;
+    background: rgb(107, 170, 157);
+}
+
+#cajaInicio {
+    display: flex;
+    flex-grow: 3;
+    flex-direction: column;
+    flex-basis: 200px;
+    background-color: #1e8899;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+#botones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 0%;
+    background-color: rgb(107, 170, 157);
+    border-radius: 4px;
+    margin: 1px;
+    height: 100px;
+    text-align: center;
+}
+.contBotones{
+    display: flex;
+background: #1e8899;
+size: 40px;
+flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: stretch;
+}
+#peliculas{
+    border-color: #1e8899;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+    background: #bce1bc;
+    text-align: center;
+
+}
+#personajes{
+    border-color: #1e8899;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+    background: #bce1bc;
+    text-align: center;
+
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0%;
+    border-color: #1e8899;
+    width: 100%;
+    height: 30px;
+   font-weight: 560;
+}
+select{    
+        background: #cae4ca;
+        border-radius: 4px;
+        border-color: #1e8899;
+        border: 0px;
+        text-align: center;
+}
+
+.filtro {
+    
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    border-color: #1e8899;
+    padding: 5px;
+}
+
+.ordenar {
+   
+    border-color: #1e8899;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.calculo {
+    border-color: #1e8899;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+    background: #bce1bc;
+    text-align: center;
+
+}
+
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1e8899;
+    align-self: center;
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+
+h3 {
+    display: flex;
+    margin-block-start: 2px;
+    color: #1e8899;
+    font-family: cursive;
+    align-self: center;
+
+}
+
+p {
+
+    display: flex;
+    margin-block-start: 1px;
+    font-family: cursive;
+    color: #1e8899;
+}
+
+img {
+    border-radius: 3px;
+}
+
+.cajaDos{
+    background: #1e8899;
+}
+
+#filtro_Personajes{
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.cajaTres{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    background: #1e8899;
+}
+
+.card-movie img {
+    width: 190px;
+    height: 220px;
+    border-radius: 6px;
+}
+
+
+@media only screen and (min-width: 300px) {
+    .card-movie {
+        display: flex;
+        width: 100%;
+        height: 380px;
+        background-color: rgb(107, 170, 157);
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 25px;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .card-movie {
+        width: 200px; 
+    }
+}

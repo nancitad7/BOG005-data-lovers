@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>studio Ghibli</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="cajaPrincipal">
+    <h1> STUDIO GHIBLI </h1>
+    <header id="cajaInicio">
+      <img
+        src=https://cdn.shopify.com/s/files/1/1057/4964/products/The-Secret-World-of-Arrietty-Vintage-Movie-Poster-Original-14x78-2.jpg?v=1649127734
+        alt="">
+    </header>
+    <aside class="contBotones">
+      <button id="peliculas">peliculas</button>
+      <button id="personajes">personajes</button>
+    </aside>
+    <aside id="Filtro_Peliculas" class="button">
+      <h1>Peliculas</h1>
+      <ul id="botones">
+        <li><label for="selectDirector">Filtrar Por Director</label>
+
+          <select name="selectDirector" id="selectDirector">
+            <option value="Elija">Seleccione</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+            <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          </select>
+        </li>
+
+        <li><label for="release_Date">Orden Por Año</label>
+
+          <select name="release_Date" id="release_Date">
+            <option value="Elija opcion">Seleccione</option>
+            <option value="Año_Ascendente">Año Ascendente</option>
+            <option value="Año_Descendente"> Año Descendente</option>
+          </select>
+        </li>
+
+        <li><label for="release_Date">filtro Por Año</label>
+
+          <select name="release_Date" id="filterData">
+            <option value="Elija opcion">Seleccione</option>
+            <option value="1988">1988</option>
+            <option value="1991"> 1991</option>
+            <option value="2001"> 2001</option>
+          </select>
+        </li>
+
+        <li>Mejor Puntaje<button class="calculo" id="calcular"  >Calcular</button></li>
+      <li><label for="score">Score</label>
+       <input type="text" id="score" aria-placeholder="Escribe la puntuacion">
+        </li>
+      </ul>
+    </aside>
+    <aside class="buttons" id="filtro_Personajes">
+     <section class="cajaDos">
+        <h1>Personajes</h1>
+        <label for="personas">Filtro Por Peliculas</label>
+
+        <select name="personas" id="personas">
+          <option value="seleccione">seleccione</option>
+        </select>
+    
+        <label for="generos">Filtro Por Identidad</label>
+        <select name="identidad" id="generos">
+          <option value= "seleccione">seleccione</option>
+          <option value= "Female"> Female</option>
+          <option value="Male">Male</option>
+        </select>
+      </section>
+      <section id="contenedor_Personajes" class="cajaTres"></section>
+    </aside>
+
+    <main id="root">
+    </main>
+
+  
+  </section>
+  <script src="main.js" type="module"></script>
+</body>
 </html>
